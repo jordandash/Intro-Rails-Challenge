@@ -1,4 +1,4 @@
-<h1>Listing products</h1>
+<h1>Mad Swag Products Store</h1>
 
 <table>
   <tr>
@@ -27,3 +27,9 @@
 <br />
 
 <%= link_to 'New Product', new_product_path %>
+
+<% @how_much_bacon.times do |i| %>
+  <p>
+    <strong><%= (i + 1) %>: </strong>
+    Chunky Bacon</p>
+<% end %>
